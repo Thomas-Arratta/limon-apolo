@@ -224,7 +224,7 @@ p
 
 /*---------- MediaQuery ----------*/
 
-@media screen and (max-width: 360px)
+@media screen and (max-width: 415px)
 {
     main .index
     {
