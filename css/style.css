@@ -224,12 +224,13 @@ p
 
 /*---------- MediaQuery ----------*/
 
-@media screen and (max-width:400px)
+@media screen and (max-width: 360px)
 {
     main .index
     {
         flex-direction: column;
         gap: 10px;
+        margin-left: 6rem;
     }
 
     main .index_image
@@ -303,7 +304,7 @@ p
 
     p
     {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
