@@ -1,0 +1,140 @@
+body
+{
+    background-color: $color-body;
+}
+main
+{
+    // --- INDEX --- //
+    .index{
+        @include estilos (flex, space-around);
+        padding-bottom: 15px;
+        padding-top: 15px;
+        margin: 4rem;
+        .index_image{
+            width: 36.5rem;
+        }
+    }
+    // --- INDEX --- //
+    // --- ABOUT ME --- //
+    section{
+        .members{
+            @include estilos (flex, space-evenly);
+            flex-wrap: wrap;
+            margin: 1.5rem;
+            padding: 2rem;
+            .members_cards{
+                width: 30rem;
+                height: 38rem;
+                margin-bottom: 15px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: $color-cards;
+                margin: 5px;
+                .members_photo{
+                    width: 300px;
+                    height: 300px;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    padding: 5px;
+                }
+                .members_cards_redes{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    
+    // --- ABOUT ME --- //
+    // --- GALERY --- //
+    .galery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+        margin: auto;
+        max-width: 1250px;
+        div{
+            .galery_image_measure{
+                width: 350px;
+                height: 350px;
+                box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
+                -webkit-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
+                -moz-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
+            }
+        }
+    }
+    // --- GALERY --- //
+    // --- FORMULARIO --- //
+    .formulario{
+        .form{
+            text-align: center;
+            padding: 3rem;
+            color: $color-form;
+            .form_name{
+                margin: 1rem;
+            }
+            .form_email{
+                margin: 1rem;
+            }
+            .form_phone{
+                margin: 1rem;
+            }
+            .form_textarea{
+                margin: 1rem;
+                .p_form{
+                    color: $color-form;
+                }
+            }
+        }
+    }
+    .redes{
+        @include estilos (flex, center);
+        .redes_link{
+            list-style: none;
+            display: contents;
+            .redes_image{
+                width: 11.5rem;
+                padding: 2rem;
+            }
+        }
+    }
+    // --- FORMULARIO --- //
+    // --- DISCOGRAFIA ---//
+    section{
+        .videos{
+            @include estilos (flex, space-around);    
+        }
+    }
+    // --- DISCOGRAFIA ---//
+
+    h1{
+        @extend %hs;
+        font-size: 53px;
+    }
+
+    h2{
+        @extend %hs;
+        font-size: 35px;
+    }
+    
+    h3{
+        @extend %hs;
+        font-size: 23px;
+    }
+
+    p{
+        @extend %hs;
+        padding: 15px;
+        font-size: 19px;
+    }
+}
+
+
+
+
+
+
+
+
+

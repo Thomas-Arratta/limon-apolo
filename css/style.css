@@ -1,311 +1,250 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main p, main h3, main h2, main h1 {
+  text-align: center;
+  color: white;
 }
 
-html
-{
-    font-size: 62.5%; /*cambiando el rem a 10px*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body
-{
-    background-color: rgb(30, 30, 30);
+html {
+  font-size: 62.5%; /*cambiando el rem a 10px*/
 }
 
-/*---------- Header -------*/
-
-/* ------ NAV ------ */
-
-header .logo
-{
-    width: 20rem;
+header .logo {
+  width: 20rem;
+}
+header .nav-link-large {
+  font-size: 20px;
+  color: white;
+}
+header .navbar-nav {
+  gap: 10px;
+}
+header .navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.189);
 }
 
-header .nav-link-large
-{
-    font-size: 20px;
-    color: white;
+body {
+  background-color: rgb(30, 30, 30);
 }
 
-header .navbar-nav
-{
-    gap: 10px;
+main .index {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin: 4rem;
+}
+main .index .index_image {
+  width: 36.5rem;
+}
+main section .members {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  padding: 2rem;
+}
+main section .members .members_cards {
+  width: 30rem;
+  height: 38rem;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(145, 145, 145);
+  margin: 5px;
+}
+main section .members .members_cards .members_photo {
+  width: 300px;
+  height: 300px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px;
+}
+main section .members .members_cards .members_cards_redes {
+  width: 40px;
+  height: 40px;
+}
+main .galery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin: auto;
+  max-width: 1250px;
+}
+main .galery div .galery_image_measure {
+  width: 350px;
+  height: 350px;
+  box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
+  -webkit-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
+  -moz-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
+}
+main .formulario .form {
+  text-align: center;
+  padding: 3rem;
+  color: rgb(232, 243, 81);
+}
+main .formulario .form .form_name {
+  margin: 1rem;
+}
+main .formulario .form .form_email {
+  margin: 1rem;
+}
+main .formulario .form .form_phone {
+  margin: 1rem;
+}
+main .formulario .form .form_textarea {
+  margin: 1rem;
+}
+main .formulario .form .form_textarea .p_form {
+  color: rgb(232, 243, 81);
+}
+main .redes {
+  display: flex;
+  justify-content: center;
+}
+main .redes .redes_link {
+  list-style: none;
+  display: contents;
+}
+main .redes .redes_link .redes_image {
+  width: 11.5rem;
+  padding: 2rem;
+}
+main section .videos {
+  display: flex;
+  justify-content: space-around;
+}
+main h1 {
+  font-size: 53px;
+}
+main h2 {
+  font-size: 35px;
+}
+main h3 {
+  font-size: 23px;
+}
+main p {
+  padding: 15px;
+  font-size: 19px;
 }
 
-header .navbar-toggler
-{
-    background-color: rgba(255, 255, 255, 0.189);
-}
-
-/* ------ NAV ------ */
-
-/*---------- Header -------*/
-
-/*---------------------------------------------------------------------------------*/
-
-/*---------- Main ----------*/
-
-/* --- INDEX --- */
-.index
-{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    margin: 4rem;
-}
-
-.index_image
-{
-    width: 36.5rem;
-}
-/* --- INDEX --- */
-
-/* --- ABOUT ME --- */
-.members
-{
-    display: flex;
+/* MediaQuery arreglos */
+@media screen and (max-width: 1198px) {
+  main .index {
     flex-wrap: wrap;
+    gap: 1rem;
+  }
+  main section .videos {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1140px) {
+  main .galery {
+    display: flex;
     justify-content: space-evenly;
-    margin: 1.5rem;
-    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  main .galery div .galery_image_measure {
+    width: 300px;
+    height: 300px;
+  }
 }
-
-.members_cards
-{
+@media screen and (max-width: 1040px) {
+  main .galery div .galery_image_measure {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section article h1 {
+    font-size: 43px;
+  }
+  main section article p {
+    font-size: 15px;
+  }
+  main section h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+  main section article h1 {
+    font-size: 38px;
+  }
+  main section article p {
+    font-size: 14px;
+  }
+  main section h2 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 850px) {
+  main .galery div .galery_image_measure {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main section article h1 {
+    font-size: 33px;
+  }
+  main section article p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .index .index_image {
+    width: 33rem;
+  }
+  main .redes .redes_link .redes_image {
+    width: 7rem;
+    padding: 0.8rem;
+  }
+  header .logo {
+    width: 15rem;
+  }
+}
+/*   MediaQuery mobile    */
+@media screen and (max-width: 415px) {
+  main .index {
+    gap: 10px;
+    margin-left: 6rem;
+  }
+  main .index .index_image {
     width: 30rem;
-    height: 38rem;
-    margin-bottom: 15px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: rgb(145, 145, 145);
-    margin: 5px;
+  }
+  main section .members .members_cards .members_photo {
+    width: 25rem;
+    height: 23rem;
+  }
+  main .redes .redes_link .redes_image {
+    width: 5rem;
+    padding: 0.5rem;
+  }
+  main section .videos {
+    flex-direction: column;
+  }
+  main section .videos div iframe {
+    width: 88%;
+    height: auto;
+    padding-left: 4.5rem;
+  }
+  main h1 {
+    font-size: 25px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main h3 {
+    font-size: 15px;
+  }
+  main p {
+    font-size: 9px;
+  }
 }
 
-.members_photo
-{
-    width: 300px;
-    height: 300px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 5px;
-}
-
-.members_cards_redes
-{
-    width: 40px;
-    height: 40px;
-}
-/* --- ABOUT ME --- */
-
-/* --- GALERY --- */
-.galery
-{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    gap: 1.5rem;
-    margin: auto;
-    max-width: 1300px;
-}
-
-.galery_image_measure
-{
-    width: 300px;
-    height: 300px;
-}
-.galery div img
-{
-    box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
-    -webkit-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
-    -moz-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
-}
-/* --- GALERY --- */
-
-/* --- FORMULARIO --- */
-main .formulario .form
-{
-    text-align: center;
-    padding: 3rem;
-    color: rgb(232, 243, 81);
-}
-
-main .formulario .form .form_name
-{
-    margin: 1rem;
-}
-
-main .formulario .form .form_email
-{
-    margin: 1rem;
-}
-
-main .formulario .form .form_phone
-{
-    margin: 1rem;
-}
-
-main .formulario .form .form_textarea
-{
-    margin: 1rem;
-}
-
-.p_form
-{
-    color: rgb(232, 243, 81);
-}
-
-.redes
-{
-    display: flex;
-    justify-content: center;
-}
-
-.redes_link
-{
-    list-style: none;
-    display: contents;
-}
-
-.redes_image
-{
-    width: 11.5rem;
-    padding: 2rem;
-}
-/* --- FORMULARIO --- */
-
-/* --- DISCOGRAFIA ---*/
-.videos
-{
-    display: flex;
-    justify-content: space-around;
-}
-
-/* --- DISCOGRAFIA ---*/
-
-
-h1
-{
-    text-align: center;
-    color: white;
-    font-size: 53px;
-}
-
-h2
-{
-    text-align: center;
-    color: white;
-    font-size: 35px;
-}
-
-h3
-{
-    text-align: center;
-    color: white;
-    font-size: 23px;
-}
-
-p
-{
-    text-align: center;
-    color: white;
-    padding: 15px;
-    font-size: 19px;
-}
-/*---------- Main ----------*/
-/*---------------------------------------------------------------------------------*/
-/*---------- Footer ----------*/
-
-/*---------- Footer ----------*/
-
-/*---------------------------------------------------------------------------------*/
-
-/*---------- MediaQuery ----------*/
-
-@media screen and (max-width: 415px)
-{
-    main .index
-    {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 6rem;
-    }
-
-    main .index_image
-    {
-        width: 24rem;
-    }
-
-    main .members_photo
-    {
-        width: 25rem;
-        height: 23rem;
-    }
-
-    main .videos
-    {
-        flex-direction: column;
-    }
-
-    main .galery
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main .galery_image_measure
-    {
-        width: 75%;
-        height: 75%;
-        margin-left: 4rem;
-    }
-
-    main iframe
-    {
-        width: 88%;
-        height: auto;
-        padding-left: 4.5rem;
-    }
-    
-    main .redes
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main .redes_image
-    {
-        width: 7rem;
-        padding: 0.5rem;
-    }
-
-    header .logo
-    {
-        width: 15rem;
-    }
-
-
-    h1
-    {
-        font-size: 25px;
-    }
-
-    h2
-    {
-        font-size: 20px;
-    }
-
-    h3
-    {
-        font-size: 15px;
-    }
-
-    p
-    {
-        font-size: 9px;
-    }
-}
-
-/*---------- MediaQuery ----------*/
+/*# sourceMappingURL=style.css.map */

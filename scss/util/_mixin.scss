@@ -1,0 +1,4 @@
+@mixin estilos ($display, $justify-content){
+    display: $display;
+    justify-content: $justify-content;
+}

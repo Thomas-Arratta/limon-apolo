@@ -1,0 +1,12 @@
+@import "./util/_variables";
+@import"./util/mixin";
+@import "./util/extend";
+
+@import "./base/_reset.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_header.scss";
+@import "./layout/_main.scss";
+
+@import"./util/mq-arreglos";
+@import"./util/mq-tablet";
+@import"./util/mq-mobile";

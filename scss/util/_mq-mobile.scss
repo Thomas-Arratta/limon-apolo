@@ -1,0 +1,59 @@
+/*   MediaQuery mobile    */
+
+@media screen and (max-width: 415px)
+{
+    main{
+        .index{
+            gap: 10px;
+            margin-left: 6rem;
+            .index_image{
+                width: 30rem;
+            }
+        }
+        section{
+            .members{
+                .members_cards{
+                    .members_photo{
+                        width: 25rem;
+                        height: 23rem;                      
+                    }
+                }
+            }    
+        }
+        .redes{
+            .redes_link{
+                .redes_image{
+                    width: 5rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+        section{
+            .videos{
+                flex-direction: column;
+                div{
+                    iframe{
+                        width: 88%;
+                        height: auto;
+                        padding-left: 4.5rem;
+                    }
+                }
+            }
+        }
+        h1{
+            font-size: 25px;
+        }
+    
+        h2{
+            font-size: 20px;
+        }
+    
+        h3{
+            font-size: 15px;
+        }
+    
+        p{
+            font-size: 9px;
+        }
+    }
+}
