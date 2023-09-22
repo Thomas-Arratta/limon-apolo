@@ -6,10 +6,12 @@ main
 {
     // --- INDEX --- //
     .index{
-        @include estilos (flex, space-around);
-        padding-bottom: 15px;
-        padding-top: 15px;
+        @include estilos_flex (flex, space-around);
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
         margin: 4rem;
+        flex-wrap: wrap;
+        gap: 1rem;
         .index_image{
             width: 36.5rem;
         }
@@ -17,29 +19,39 @@ main
     // --- INDEX --- //
     // --- ABOUT ME --- //
     section{
+        article{
+            margin-left: 11rem;
+            margin-right: 11rem;
+            .historia_p{
+                color: $color-pespeciales;
+                font-size: 1.8rem;
+                gap: 0.2rem;
+            }
+        }
         .members{
-            @include estilos (flex, space-evenly);
+            @include estilos_flex (flex, space-evenly);
             flex-wrap: wrap;
             margin: 1.5rem;
             padding: 2rem;
+            gap: 1.5rem;
             .members_cards{
                 width: 30rem;
                 height: 38rem;
-                margin-bottom: 15px;
+                margin-bottom: 1.5rem;
                 text-align: center;
-                border-radius: 10px;
+                border-radius: 1rem;
                 background-color: $color-cards;
-                margin: 5px;
+                margin: 0.5rem;
                 .members_photo{
-                    width: 300px;
-                    height: 300px;
-                    border-top-right-radius: 10px;
-                    border-top-left-radius: 10px;
-                    padding: 5px;
+                    width: 30rem;
+                    height: 30rem;
+                    border-top-right-radius: 1rem;
+                    border-top-left-radius: 1rem;
+                    padding: 0.5rem;
                 }
                 .members_cards_redes{
-                    width: 40px;
-                    height: 40px;
+                    width: 4rem;
+                    height: 4rem;
                 }
             }
         }
@@ -53,11 +65,11 @@ main
         grid-template-rows: auto;
         gap: 2rem;
         margin: auto;
-        max-width: 1250px;
+        max-width: 125rem;
         div{
             .galery_image_measure{
-                width: 350px;
-                height: 350px;
+                width: 35rem;
+                height: 35rem;
                 box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
                 -webkit-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
                 -moz-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
@@ -65,68 +77,78 @@ main
         }
     }
     // --- GALERY --- //
-    // --- FORMULARIO --- //
-    .formulario{
-        .form{
-            text-align: center;
-            padding: 3rem;
-            color: $color-form;
-            .form_name{
-                margin: 1rem;
-            }
-            .form_email{
-                margin: 1rem;
-            }
-            .form_phone{
-                margin: 1rem;
-            }
-            .form_textarea{
-                margin: 1rem;
-                .p_form{
-                    color: $color-form;
-                }
-            }
-        }
-    }
-    .redes{
-        @include estilos (flex, center);
-        .redes_link{
-            list-style: none;
-            display: contents;
-            .redes_image{
-                width: 11.5rem;
-                padding: 2rem;
-            }
-        }
-    }
-    // --- FORMULARIO --- //
     // --- DISCOGRAFIA ---//
     section{
         .videos{
-            @include estilos (flex, space-around);    
+            @include estilos_flex (flex, space-around);
+            flex-wrap: wrap;    
         }
     }
     // --- DISCOGRAFIA ---//
 
     h1{
         @extend %hs;
-        font-size: 53px;
+        font-size: 5.3rem;
     }
 
     h2{
         @extend %hs;
-        font-size: 35px;
+        font-size: 3.5rem;
     }
     
     h3{
         @extend %hs;
-        font-size: 23px;
+        font-size: 2.3rem;
     }
 
     p{
         @extend %hs;
-        padding: 15px;
-        font-size: 19px;
+        padding: 1.5rem;
+        font-size: 1.9rem;
+    }
+}
+.form{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+        padding: 5rem 5.5rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+        border-radius: 2rem;
+        text-align: center;
+        width: 34rem;
+        background-color: rgb(146, 146, 108);
+        h1{
+            color: #363528;
+            font-size: 3.5rem;
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            label{
+                color: #363528;
+                font-size: 1.5rem;
+                font-weight: 60rem;
+                margin-bottom: 1.5rem;
+            }
+            input{
+                @extend %estilosform;
+            }
+            textarea{
+                @extend %estilosform;
+            }
+            .btn{
+                font-size: 1.6rem;
+                color: #ffffff;
+                border: 0;
+                border-radius: 2.5rem;
+                background-color: #dbe123;
+                box-shadow: 0 0 2rem rgba(254, 254, 0, 0.4);
+                cursor: pointer;
+            }
+        }
     }
 }
 

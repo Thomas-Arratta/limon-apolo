@@ -3,6 +3,16 @@ main p, main h3, main h2, main h1 {
   color: white;
 }
 
+.form form .formulario textarea, .form form .formulario input {
+  padding: 1.7rem 2.5rem;
+  border-radius: 2.5rem;
+  margin-bottom: 2rem;
+  background-color: #feffed;
+  border: 0.2rem solid #fafaf0;
+  color: #363528;
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +21,24 @@ main p, main h3, main h2, main h1 {
 
 html {
   font-size: 62.5%; /*cambiando el rem a 10px*/
+}
+
+footer .redes {
+  display: flex;
+  justify-content: center;
+}
+footer .redes .redes_link {
+  list-style: none;
+  display: contents;
+}
+footer .redes .redes_link .redes_image {
+  width: 11.5rem;
+  padding: 2rem;
+}
+footer .copyright {
+  text-align: center;
+  color: #dcd8b9;
+  font-size: 1.5rem;
 }
 
 header .logo {
@@ -34,12 +62,23 @@ body {
 main .index {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
   margin: 4rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 main .index .index_image {
   width: 36.5rem;
+}
+main section article {
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+main section article .historia_p {
+  color: #dcd8b9;
+  font-size: 1.8rem;
+  gap: 0.2rem;
 }
 main section .members {
   display: flex;
@@ -47,26 +86,27 @@ main section .members {
   flex-wrap: wrap;
   margin: 1.5rem;
   padding: 2rem;
+  gap: 1.5rem;
 }
 main section .members .members_cards {
   width: 30rem;
   height: 38rem;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 1rem;
   background-color: rgb(145, 145, 145);
-  margin: 5px;
+  margin: 0.5rem;
 }
 main section .members .members_cards .members_photo {
-  width: 300px;
-  height: 300px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  padding: 5px;
+  width: 30rem;
+  height: 30rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem;
 }
 main section .members .members_cards .members_cards_redes {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 main .galery {
   display: grid;
@@ -74,76 +114,75 @@ main .galery {
   grid-template-rows: auto;
   gap: 2rem;
   margin: auto;
-  max-width: 1250px;
+  max-width: 125rem;
 }
 main .galery div .galery_image_measure {
-  width: 350px;
-  height: 350px;
+  width: 35rem;
+  height: 35rem;
   box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
   -webkit-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
   -moz-box-shadow: 10px 10px 23px -7px rgba(228, 250, 34, 0.781);
 }
-main .formulario .form {
-  text-align: center;
-  padding: 3rem;
-  color: rgb(232, 243, 81);
-}
-main .formulario .form .form_name {
-  margin: 1rem;
-}
-main .formulario .form .form_email {
-  margin: 1rem;
-}
-main .formulario .form .form_phone {
-  margin: 1rem;
-}
-main .formulario .form .form_textarea {
-  margin: 1rem;
-}
-main .formulario .form .form_textarea .p_form {
-  color: rgb(232, 243, 81);
-}
-main .redes {
-  display: flex;
-  justify-content: center;
-}
-main .redes .redes_link {
-  list-style: none;
-  display: contents;
-}
-main .redes .redes_link .redes_image {
-  width: 11.5rem;
-  padding: 2rem;
-}
 main section .videos {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 main h1 {
-  font-size: 53px;
+  font-size: 5.3rem;
 }
 main h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 main h3 {
-  font-size: 23px;
+  font-size: 2.3rem;
 }
 main p {
-  padding: 15px;
-  font-size: 19px;
+  padding: 1.5rem;
+  font-size: 1.9rem;
 }
 
-/* MediaQuery arreglos */
-@media screen and (max-width: 1198px) {
-  main .index {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  main section .videos {
-    flex-wrap: wrap;
-  }
+.form {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media screen and (max-width: 1140px) {
+.form form {
+  padding: 5rem 5.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  text-align: center;
+  width: 34rem;
+  background-color: rgb(146, 146, 108);
+}
+.form form h1 {
+  color: #363528;
+  font-size: 3.5rem;
+}
+.form form .formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.form form .formulario label {
+  color: #363528;
+  font-size: 1.5rem;
+  font-weight: 60rem;
+  margin-bottom: 1.5rem;
+}
+.form form .formulario .btn {
+  font-size: 1.6rem;
+  color: #ffffff;
+  border: 0;
+  border-radius: 2.5rem;
+  background-color: #dbe123;
+  box-shadow: 0 0 2rem rgba(254, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+/*    MediaQuery desktop     */
+@media screen and (max-width: 1245px) {
   main .galery {
     display: flex;
     justify-content: space-evenly;
@@ -154,96 +193,72 @@ main p {
     height: 300px;
   }
 }
-@media screen and (max-width: 1040px) {
-  main .galery div .galery_image_measure {
-    width: 250px;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  main section article h1 {
-    font-size: 43px;
-  }
-  main section article p {
-    font-size: 15px;
-  }
-  main section h2 {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 900px) {
-  main section article h1 {
-    font-size: 38px;
-  }
-  main section article p {
-    font-size: 14px;
-  }
-  main section h2 {
-    font-size: 21px;
-  }
-}
-@media screen and (max-width: 850px) {
-  main .galery div .galery_image_measure {
-    width: 230px;
-    height: 230px;
-  }
-}
-@media screen and (max-width: 800px) {
-  main section article h1 {
-    font-size: 33px;
-  }
-  main section article p {
-    font-size: 13px;
-  }
-}
 @media screen and (max-width: 600px) {
   main .index .index_image {
-    width: 33rem;
+    width: 30rem;
   }
-  main .redes .redes_link .redes_image {
-    width: 7rem;
-    padding: 0.8rem;
+  main section .videos div iframe {
+    width: 40rem;
+    margin: 2.4rem;
+  }
+  main section article {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  main section article .historia_p {
+    font-size: 1.5rem;
   }
   header .logo {
     width: 15rem;
+  }
+  footer .redes .redes_link .redes_image {
+    width: 7rem;
+    padding: 0.8rem;
   }
 }
 /*   MediaQuery mobile    */
 @media screen and (max-width: 415px) {
   main .index {
-    gap: 10px;
     margin-left: 6rem;
   }
   main .index .index_image {
-    width: 30rem;
+    width: 27rem;
+  }
+  main section article {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  main section article .historia_p {
+    font-size: 1.2rem;
   }
   main section .members .members_cards .members_photo {
     width: 25rem;
     height: 23rem;
   }
-  main .redes .redes_link .redes_image {
-    width: 5rem;
-    padding: 0.5rem;
-  }
-  main section .videos {
-    flex-direction: column;
-  }
   main section .videos div iframe {
-    width: 88%;
+    width: 34.7rem;
     height: auto;
-    padding-left: 4.5rem;
+    margin: 1rem;
+  }
+  main .galery div .galery_image_measure {
+    width: 23rem;
+    height: 23rem;
   }
   main h1 {
-    font-size: 25px;
+    font-size: 2.9rem;
   }
   main h2 {
-    font-size: 20px;
+    font-size: 2.4rem;
   }
   main h3 {
-    font-size: 15px;
+    font-size: 2rem;
   }
   main p {
-    font-size: 9px;
+    font-size: 1.4rem;
+  }
+  footer .redes .redes_link .redes_image {
+    width: 5rem;
+    padding: 0.5rem;
   }
 }
 

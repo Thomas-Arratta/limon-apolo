@@ -2,9 +2,33 @@
     main{
         .index{
             .index_image{
-                width: 33rem;
+                width: 30rem;
             }
         }
+        section{
+            .videos{
+                div{
+                    iframe{
+                        width:40rem;
+                        margin: 2.4rem;
+                    }
+                }
+            }
+        }
+        section{
+            article{
+                margin-left: 8rem;
+                margin-right: 8rem;
+                .historia_p{
+                    font-size: 1.5rem;
+                }
+            }
+        }        
+    }
+    header .logo{
+        width: 15rem;
+    }
+    footer{
         .redes{
             .redes_link{
                 .redes_image{
@@ -13,8 +37,5 @@
                 }
             }
         }
-    }
-    header .logo{
-        width: 15rem;
     }
 }

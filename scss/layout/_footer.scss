@@ -1,0 +1,18 @@
+footer{
+    .redes{
+        @include estilos_flex (flex, center);
+        .redes_link{
+            list-style: none;
+            display: contents;
+            .redes_image{
+                width: 11.5rem;
+                padding: 2rem;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        color: $color-pespeciales;
+        font-size: 1.5rem;
+    }
+}

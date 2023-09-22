@@ -1,0 +1,15 @@
+/*    MediaQuery desktop     */
+@media screen and (max-width: 1245px){
+    main{
+        .galery{
+            @include estilos_flex (flex, space-evenly);
+            flex-wrap: wrap;    
+            div{
+                .galery_image_measure{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
